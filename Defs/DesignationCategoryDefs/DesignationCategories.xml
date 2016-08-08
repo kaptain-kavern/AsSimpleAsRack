@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignationCategoryDef>
+    <DefName>Storage</DefName>
+    <label>Storage</label>
+    <description>Various storage buildings</description>
+    <order>10</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_ZoneAddStockpile_Resources</li>
+      <li>Designator_ZoneAddStockpile_Dumping</li>
+      <li>Designator_ZoneDelete</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+
+
+
+
+
+
+</Defs>

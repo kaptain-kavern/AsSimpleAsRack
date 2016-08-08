@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <CommunityCoreLibrary.ModHelperDef>
+        <defName>TheMorgueTheMerrier</defName>
+
+        <ModName>The morgue the merrier</ModName>
+
+        <minCCLVersion>0.14.0</minCCLVersion>
+
+    </CommunityCoreLibrary.ModHelperDef>
+
+</Defs>
