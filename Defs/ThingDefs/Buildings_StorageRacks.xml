@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
 <!-- Abstract -->
-  <ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
-    <comps>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-    </comps>
-    <DesignationCategory>Furniture</DesignationCategory>
-    <tradeTags>
-      <li>Furniture</li>
-    </tradeTags>
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
   </ThingDef>
 
-  <ThingDef Name="StorageRackBase" ParentName="FurnitureBase" Abstract="True">
+  <ThingDef Name="StorageRackBase" Abstract="True" ParentName="BuildingBase">
     <description>Haulers carry stuff here for storage.</description>
     <thingClass>Building_Storage</thingClass>
     <AltitudeLayer>Building</AltitudeLayer>
@@ -26,6 +26,11 @@
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
     <statBases>
       <Flammability>1.0</Flammability>
       <Beauty>0</Beauty>
@@ -58,6 +63,7 @@
   </ThingDef>
 
   <ThingDef Name="StorageRackRefrigerated" ParentName="StorageRackBase" Abstract="True">
+    <description>Haulers carry stuff here for storage. This storage is refrigerated</description>
     <holdsRoof>true</holdsRoof>
     <building>
       <preventDeterioration>true</preventDeterioration>
