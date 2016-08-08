@@ -256,7 +256,7 @@
   </graphicData>
   <costStuffCount>15</costStuffCount>
   <costList>
-    <Steel>1</Steel>
+    <Steel>5</Steel>
     <Component>1</Component>
   </costList>
   <statBases>
@@ -276,7 +276,7 @@
   </graphicData>
   <costStuffCount>30</costStuffCount>
   <costList>
-    <Steel>2</Steel>
+    <Steel>10</Steel>
     <Component>1</Component>
   </costList>
   <statBases>
@@ -296,7 +296,7 @@
   </graphicData>
   <costStuffCount>45</costStuffCount>
   <costList>
-    <Steel>3</Steel>
+    <Steel>15</Steel>
     <Component>1</Component>
   </costList>
   <statBases>
@@ -316,7 +316,7 @@
   </graphicData>
   <costStuffCount>60</costStuffCount>
   <costList>
-    <Steel>4</Steel>
+    <Steel>20</Steel>
     <Component>1</Component>
   </costList>
   <statBases>
@@ -338,7 +338,7 @@
   </graphicData>
   <costStuffCount>60</costStuffCount>
   <costList>
-    <Steel>4</Steel>
+    <Steel>20</Steel>
     <Component>2</Component>
   </costList>
   <statBases>
@@ -358,7 +358,7 @@
   </graphicData>
   <costStuffCount>90</costStuffCount>
   <costList>
-    <Steel>6</Steel>
+    <Steel>30</Steel>
     <Component>2</Component>
   </costList>
   <statBases>
@@ -378,7 +378,7 @@
   </graphicData>
   <costStuffCount>120</costStuffCount>
   <costList>
-    <Steel>8</Steel>
+    <Steel>40</Steel>
     <Component>2</Component>
   </costList>
   <statBases>
