@@ -1,4 +1,5 @@
 # As Simple As Rack
+<p align="center"><img src="https://i.imgur.com/z3fBWZE.jpg" /></p>
 ## Description
 ![Medium example](/Textures/Things/Buildings/Furniture/StorageMedium.png) ![Double Medium example](/Textures/Things/Buildings/Furniture/StorageMediumD.png) ![Medium example](/Textures/Things/Buildings/Furniture/StorageSingle.png) ![Double Medium example](/Textures/Things/Buildings/Furniture/StorageSmallD.png)
 
