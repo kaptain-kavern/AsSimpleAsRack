@@ -24,5 +24,5 @@ _Note_ : even unpowered (or switched off) items stored in it will still not deca
 [CCL mod](https://ludeon.com/forums/index.php?topic=16599) is mandatory and should be set to be launched **BEFORE** this mod in modlist
 
 ## Credits
-All graphical assets (and the idea about using roof holding structures) are from **Saularian** in [[A11 Terra Firma Mod Pack](https://ludeon.com/forums/index.php?topic=12580.msg126663#msg126663)]
+All graphical assets (and the idea about using roof holding structures) are from **Saularian** in [[A11 Terra Firma Mod Pack](https://ludeon.com/forums/index.php?topic=12580.msg126663#msg126663)]      
 A big thank you to the ![CCL](https://raw.githubusercontent.com/RimWorldCCLTeam/CommunityCoreLibrary/master/WebGraphics/CCL_Button.png) team, half of the mod use your modified classes
