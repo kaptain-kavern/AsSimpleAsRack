@@ -2,9 +2,9 @@
 <Defs>
 
     <CommunityCoreLibrary.ModHelperDef>
-        <defName>TheMorgueTheMerrier</defName>
+        <defName>AsSimpleAsRack</defName>
 
-        <ModName>The morgue the merrier</ModName>
+        <ModName>As Simple As Rack</ModName>
 
         <minCCLVersion>0.14.0</minCCLVersion>
 
