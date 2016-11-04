@@ -26,11 +26,6 @@
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
-    <comps>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-    </comps>
     <statBases>
       <Flammability>1.0</Flammability>
       <Beauty>0</Beauty>
@@ -69,6 +64,7 @@
     <building>
       <preventDeterioration>true</preventDeterioration>
     </building>
+    <tickerType>Rare</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
