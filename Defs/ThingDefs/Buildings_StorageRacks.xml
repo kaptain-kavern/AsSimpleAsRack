@@ -63,36 +63,22 @@
   </ThingDef>
 
   <ThingDef Name="StorageRackRefrigerated" ParentName="StorageRackBase" Abstract="True">
+    <thingClass>RimFridge.Building_Refrigerator</thingClass>
     <description>Haulers carry stuff here for storage. This storage is refrigerated</description>
     <holdsRoof>true</holdsRoof>
     <building>
       <preventDeterioration>true</preventDeterioration>
     </building>
     <comps>
-      <li>
-        <compClass>CommunityCoreLibrary.CompRefrigerated</compClass>
-      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>150</basePowerConsumption>
       </li>
-      <li Class="CommunityCoreLibrary.CompProperties_LowIdleDraw">
-        <compClass>CommunityCoreLibrary.CompPowerLowIdleDraw</compClass>
-        <idlePowerFactor>0.25</idlePowerFactor>
-        <operationalMode>Cycle</operationalMode>
-        <cycleLowTicks>2500</cycleLowTicks>
-        <cycleHighTicks>1000</cycleHighTicks>
-        <!-- <CompGlower />(217,217,217,0)</CompGlower> -->
-      </li>
       <li Class="CompProperties_Breakdownable"/>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Glower">
-        <glowRadius>5</glowRadius>
-        <glowColor>(217,217,217,0)</glowColor>
-      </li>
-      <li Class="CommunityCoreLibrary.CompProperties_HideItem">
-          <compClass>CommunityCoreLibrary.CompHideItem</compClass>
-          <preventItemSelection>false</preventItemSelection>
+        <glowRadius>2.5</glowRadius>
+        <glowColor>(89,188,255,0)</glowColor>
       </li>
     </comps>
     <researchPrerequisites>
