@@ -3,7 +3,7 @@
   <name>As Simple As Rack</name>
   <author>KapTaiN_KaVerN</author>
   <url></url>
-  <targetVersion>0.16.0</targetVersion>
+  <targetVersion>0.17.0</targetVersion>
   <description>
 Add simple racked storage solutions, accessible after smithing research (all structures need a bit of metal as frame). They are declined in various size and can be constructed from stone, wood or rock.
 

@@ -228,7 +228,7 @@
 
 <!-- Refrigerated Racks -->
 
-<ThingDef ParentName="StorageRackRefrigerated">
+<!-- <ThingDef ParentName="StorageRackRefrigerated">
   <defName>RefrigeratedStorageRackSingle</defName>
   <label>Single refrigerated storage rack</label>
   <graphicData>
@@ -350,11 +350,11 @@
       <altitudeLayer>MoteOverhead</altitudeLayer>
     </li>
   </comps>
-</ThingDef>
+</ThingDef> -->
 
         <!-- Doubles -->
 
-<ThingDef ParentName="StorageRackRefrigerated">
+<!-- <ThingDef ParentName="StorageRackRefrigerated">
   <defName>RefrigeratedStorageRackSmallD</defName>
   <label>Small refrigerated double storage rack</label>
   <graphicData>
@@ -445,6 +445,6 @@
       <altitudeLayer>MoteOverhead</altitudeLayer>
     </li>
   </comps>
-</ThingDef>
+</ThingDef> -->
 
 </Buildings>
