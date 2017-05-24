@@ -98,8 +98,9 @@
       <Steel>1</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>350</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>350</WorkToBuild>
+      <Mass>4</Mass>
     </statBases>
     <size>(1,1)</size>
   </ThingDef>
@@ -119,7 +120,8 @@
     </costList>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>700</WorkToMake>
+      <WorkToBuild>700</WorkToBuild>
+      <Mass>8</Mass>
     </statBases>
     <size>(2,1)</size>
   </ThingDef>
@@ -138,8 +140,9 @@
       <Steel>3</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
-      <WorkToMake>1050</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1050</WorkToBuild>
+      <Mass>12</Mass>
     </statBases>
     <size>(3,1)</size>
   </ThingDef>
@@ -158,8 +161,9 @@
       <Steel>4</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>1400</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1400</WorkToBuild>
+      <Mass>16</Mass>
     </statBases>
     <size>(4,1)</size>
   </ThingDef>
@@ -180,8 +184,9 @@
       <Steel>4</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>1400</WorkToMake>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>1400</WorkToBuild>
+      <Mass>16</Mass>
     </statBases>
     <size>(2,2)</size>
   </ThingDef>
@@ -200,8 +205,9 @@
       <Steel>6</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>600</MaxHitPoints>
-      <WorkToMake>2100</WorkToMake>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2100</WorkToBuild>
+      <Mass>24</Mass>
     </statBases>
     <size>(3,2)</size>
   </ThingDef>
@@ -220,8 +226,9 @@
       <Steel>8</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>800</MaxHitPoints>
-      <WorkToMake>2800</WorkToMake>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2800</WorkToBuild>
+      <Mass>32</Mass>
     </statBases>
     <size>(4,2)</size>
   </ThingDef>
@@ -242,8 +249,8 @@
     <Component>1</Component>
   </costList>
   <statBases>
-    <MaxHitPoints>100</MaxHitPoints>
-    <WorkToMake>350</WorkToMake>
+    <MaxHitPoints>250</MaxHitPoints>
+    <WorkToBuild>350</WorkToBuild>
   </statBases>
   <size>(1,1)</size>
   <comps>
@@ -273,8 +280,8 @@
     <Component>1</Component>
   </costList>
   <statBases>
-    <MaxHitPoints>200</MaxHitPoints>
-    <WorkToMake>700</WorkToMake>
+    <MaxHitPoints>250</MaxHitPoints>
+    <WorkToBuild>700</WorkToBuild>
   </statBases>
   <size>(2,1)</size>
   <comps>
@@ -304,8 +311,8 @@
     <Component>1</Component>
   </costList>
   <statBases>
-    <MaxHitPoints>300</MaxHitPoints>
-    <WorkToMake>1050</WorkToMake>
+    <MaxHitPoints>250</MaxHitPoints>
+    <WorkToBuild>1050</WorkToBuild>
   </statBases>
   <size>(3,1)</size>
   <comps>
@@ -335,8 +342,8 @@
     <Component>1</Component>
   </costList>
   <statBases>
-    <MaxHitPoints>400</MaxHitPoints>
-    <WorkToMake>1400</WorkToMake>
+    <MaxHitPoints>250</MaxHitPoints>
+    <WorkToBuild>1400</WorkToBuild>
   </statBases>
   <size>(4,1)</size>
   <comps>
@@ -368,8 +375,8 @@
     <Component>2</Component>
   </costList>
   <statBases>
-    <MaxHitPoints>400</MaxHitPoints>
-    <WorkToMake>1400</WorkToMake>
+    <MaxHitPoints>300</MaxHitPoints>
+    <WorkToBuild>1400</WorkToBuild>
   </statBases>
   <size>(2,2)</size>
   <comps>
@@ -399,8 +406,8 @@
     <Component>2</Component>
   </costList>
   <statBases>
-    <MaxHitPoints>600</MaxHitPoints>
-    <WorkToMake>2100</WorkToMake>
+    <MaxHitPoints>300</MaxHitPoints>
+    <WorkToBuild>2100</WorkToBuild>
   </statBases>
   <size>(3,2)</size>
   <comps>
@@ -430,8 +437,8 @@
     <Component>2</Component>
   </costList>
   <statBases>
-    <MaxHitPoints>800</MaxHitPoints>
-    <WorkToMake>2800</WorkToMake>
+    <MaxHitPoints>300</MaxHitPoints>
+    <WorkToBuild>2800</WorkToBuild>
   </statBases>
   <size>(4,2)</size>
   <comps>
