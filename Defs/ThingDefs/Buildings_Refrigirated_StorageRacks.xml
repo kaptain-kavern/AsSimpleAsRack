@@ -6,7 +6,6 @@
     <thingClass>RimFridge.Building_Refrigerator</thingClass>
     <DesignationCategory>Storage</DesignationCategory>
     <description>Haulers carry stuff here for storage. This storage is refrigerated</description>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <holdsRoof>true</holdsRoof>
     <tradeTags>
@@ -28,6 +27,7 @@
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>BuildingRubble</filthLeaving>
     <researchPrerequisites>
+      <li>Smithing</li>
       <li>AirConditioning</li>
     </researchPrerequisites>
     <passability>PassThroughOnly</passability>
@@ -311,7 +311,7 @@
       </li>
       <li Class="RimFridge.CompProperties_SecondLayer">
       <graphicData>
-        <texPath>Things/Buildings/Furniture/RefrigeratedStorageMediumDLid</texPath>
+        <texPath>Things/Buildings/Furniture/RefrigeratedStorageLargeDLid</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>MoteGlow</shaderType>
         <drawSize>(4,2)</drawSize>
