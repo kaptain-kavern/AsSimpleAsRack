@@ -1,6 +1,8 @@
 # As Simple As Rack     [![Version](https://img.shields.io/badge/Rimworld-A17-blue.svg)](https://ludeon.com/forums/index.php?topic=23205)
 <p align="center"><img src="https://i.imgur.com/Z3dKcE3.jpg" /></p>
-## Description                               
+
+## Description              
+
 ![Medium example](/Textures/Things/Buildings/Furniture/StorageMedium.png) ![Double Medium example](/Textures/Things/Buildings/Furniture/StorageMediumD.png) ![Medium example](/Textures/Things/Buildings/Furniture/StorageSingle.png) ![Double Medium example](/Textures/Things/Buildings/Furniture/StorageSmallD.png)
 
 - Add simple racked storage solutions, accessible after *smithing* research (all structures need a bit of metal as frame). They are declined in various size and can be constructed from stone, wood or rock.
@@ -21,9 +23,11 @@ _Note_ : even unpowered (or switched off) items stored in it will still not deca
 - Also add a simple neon lamp just because it was with the pack in which I salvaged the storage graphics and it goes well with the rest graphic-wise
 
 ## Instructions
+
 [Rimfrigde mod](https://ludeon.com/forums/index.php?topic=32980.0) is mandatory and should be set to be launched **BEFORE** this mod in modlist
 
 ## Credits
+
 - All graphical assets (and the idea about using roof holding structures) are from **Saularian** in [[A11 Terra Firma Mod Pack](https://ludeon.com/forums/index.php?topic=12580.msg126663#msg126663)]      
 - A big thank you to the ![CCL](https://raw.githubusercontent.com/RimWorldCCLTeam/CommunityCoreLibrary/master/WebGraphics/CCL_Button.png) team, half of the mod used to use their modified classes
 - A big thank you to **Vendan** for making the [Rimfridge mod](https://ludeon.com/forums/index.php?topic=26893) ! - *(without this I couldn't have made the refrigerated part since A15 version)*
