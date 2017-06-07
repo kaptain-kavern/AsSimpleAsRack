@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+<!-- Abstract -->
+
+  <ThingDef Name="FridgeBase" Abstract="True">
+    <thingClass>RimFridge.Building_Refrigerator</thingClass>
+    <DesignationCategory>Storage</DesignationCategory>
+    <description>Haulers carry stuff here for storage. This storage is refrigerated</description>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <holdsRoof>true</holdsRoof>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <statBases>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <category>Building</category>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <building>
+      <preventDeterioration>true</preventDeterioration>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            
+          </categories>
+          <thingDefs>
+            <li>Beer</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>FoodMeals</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <surfaceType>Item</surfaceType>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2.5</glowRadius>
+        <glowColor>(89,188,255,0)</glowColor>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>    
+    <tickerType>Rare</tickerType>
+    <pathCost>30</pathCost>
+  </ThingDef>
+
+<!-- Refrigerated Racks -->
+
+<ThingDef ParentName="FridgeBase">
+    <defName>RefrigeratedStorageRackSingle</defName>
+    <label>Single refrigerated storage rack</label>
+    <graphicData>
+      <texPath>Things/Buildings/Furniture/RefrigeratedStorageSingle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <costStuffCount>15</costStuffCount>
+    <costList>
+      <Steel>5</Steel>
+      <Component>1</Component>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>350</WorkToMake>
+    </statBases>
+    <size>(1,1)</size>  
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>90</basePowerConsumption>
+      </li>
+      <li Class="RimFridge.CompProperties_SecondLayer">
+      <graphicData>
+        <texPath>Things/Buildings/Furniture/RefrigeratedStorageSingleLid</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>MoteGlow</shaderType>
+        <drawSize>(1,1)</drawSize>
+      </graphicData>
+      <altitudeLayer>MoteOverhead</altitudeLayer>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="FridgeBase">
+    <defName>RefrigeratedStorageRackSmall</defName>
+    <label>Small refrigerated storage rack</label>    
+    <graphicData>
+      <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <costStuffCount>30</costStuffCount>
+    <costList>
+      <Steel>10</Steel>
+      <Component>1</Component>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <size>(2,1)</size>  
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>90</basePowerConsumption>
+      </li>
+      <li Class="RimFridge.CompProperties_SecondLayer">
+      <graphicData>
+        <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmallLid</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>MoteGlow</shaderType>
+        <drawSize>(2,1)</drawSize>
+      </graphicData>
+      <altitudeLayer>MoteOverhead</altitudeLayer>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="FridgeBase">
+    <defName>RefrigeratedStorageRackMedium</defName>
+    <label>Medium refrigerated storage rack</label>
+    <graphicData>
+      <texPath>Things/Buildings/Furniture/RefrigeratedStorageMedium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,1)</drawSize>
+    </graphicData>
+    <costStuffCount>45</costStuffCount>
+    <costList>
+      <Steel>15</Steel>
+      <Component>1</Component>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>1050</WorkToMake>
+    </statBases>
+    <size>(3,1)</size>  
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>90</basePowerConsumption>
+      </li>
+      <li Class="RimFridge.CompProperties_SecondLayer">
+      <graphicData>
+        <texPath>Things/Buildings/Furniture/RefrigeratedStorageMediumLid</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>MoteGlow</shaderType>
+        <drawSize>(3,1)</drawSize>
+      </graphicData>
+      <altitudeLayer>MoteOverhead</altitudeLayer>
+      </li>
+    </comps>
+  </ThingDef>
+
+<ThingDef ParentName="FridgeBase">
+    <defName>RefrigeratedStorageRackLarge</defName>
+    <label>Large refrigerated storage rack</label>
+    <graphicData>
+      <texPath>Things/Buildings/Furniture/RefrigeratedStorageLarge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,1)</drawSize>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <costList>
+      <Steel>20</Steel>
+      <Component>1</Component>
+    </costList>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>1400</WorkToMake>
+    </statBases>
+    <size>(4,1)</size>  
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>90</basePowerConsumption>
+      </li>
+      <li Class="RimFridge.CompProperties_SecondLayer">
+      <graphicData>
+        <texPath>Things/Buildings/Furniture/RefrigeratedStorageLargeLid</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>MoteGlow</shaderType>
+        <drawSize>(4,1)</drawSize>
+      </graphicData>
+      <altitudeLayer>MoteOverhead</altitudeLayer>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Doubles -->
+
+<ThingDef ParentName="FridgeBase">
+  <defName>RefrigeratedStorageRackSmallD</defName>
+  <label>Small refrigerated double storage rack</label>
+  <graphicData>
+    <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmallD</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(2,2)</drawSize>
+  </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <costList>
+      <Steel>20</Steel>
+      <Component>2</Component>
+    </costList>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>1400</WorkToMake>
+    </statBases>
+    <size>(2,2)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>90</basePowerConsumption>
+      </li>
+      <li Class="RimFridge.CompProperties_SecondLayer">
+      <graphicData>
+        <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmallDLid</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>MoteGlow</shaderType>
+        <drawSize>(2,2)</drawSize>
+      </graphicData>
+      <altitudeLayer>MoteOverhead</altitudeLayer>
+      </li>
+    </comps>
+   </ThingDef>
+
+<ThingDef ParentName="FridgeBase">
+  <defName>RefrigeratedStorageRackMediumD</defName>
+  <label>Medium refrigerated double storage rack</label>
+  <graphicData>
+    <texPath>Things/Buildings/Furniture/RefrigeratedStorageMediumD</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(3,2)</drawSize>
+  </graphicData>
+    <costStuffCount>90</costStuffCount>
+    <costList>
+      <Steel>30</Steel>
+      <Component>2</Component>
+    </costList>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToMake>2100</WorkToMake>
+    </statBases>
+    <size>(3,2)</size>  
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>90</basePowerConsumption>
+      </li>
+      <li Class="RimFridge.CompProperties_SecondLayer">
+      <graphicData>
+        <texPath>Things/Buildings/Furniture/RefrigeratedStorageMediumDLid</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>MoteGlow</shaderType>
+        <drawSize>(3,2)</drawSize>
+      </graphicData>
+      <altitudeLayer>MoteOverhead</altitudeLayer>
+      </li>
+    </comps>
+
+  </ThingDef>
+
+<ThingDef ParentName="FridgeBase">
+  <defName>RefrigeratedStorageRackLargeD</defName>
+  <label>Large refrigerated double storage rack</label>
+  <graphicData>
+    <texPath>Things/Buildings/Furniture/RefrigeratedStorageLargeD</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(4,2)</drawSize>
+  </graphicData>
+    <costStuffCount>120</costStuffCount>
+    <costList>
+      <Steel>40</Steel>
+      <Component>2</Component>
+    </costList>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToMake>2800</WorkToMake>
+    </statBases>
+    <size>(4,2)</size>  
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>90</basePowerConsumption>
+      </li>
+      <li Class="RimFridge.CompProperties_SecondLayer">
+      <graphicData>
+        <texPath>Things/Buildings/Furniture/RefrigeratedStorageMediumDLid</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>MoteGlow</shaderType>
+        <drawSize>(3,2)</drawSize>
+      </graphicData>
+      <altitudeLayer>MoteOverhead</altitudeLayer>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Buildings>

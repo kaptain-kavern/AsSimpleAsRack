@@ -11,16 +11,22 @@
     <repairEffect>Repair</repairEffect>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>BuildingRubble</filthLeaving>
+    <statBases>
+      <SellPriceFactor>0.70</SellPriceFactor>
+    </statBases>
   </ThingDef>
 
   <ThingDef Name="StorageRackBase" Abstract="True" ParentName="BuildingBase">
-    <description>Haulers carry stuff here for storage.</description>
+  	<description>Haulers carry stuff here for storage.</description>
     <thingClass>Building_Storage</thingClass>
     <AltitudeLayer>Building</AltitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <castEdgeShadows>true</castEdgeShadows>
     <DesignationCategory>Storage</DesignationCategory>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
@@ -58,6 +64,7 @@
   </ThingDef>
 
   <ThingDef Name="StorageRackRefrigerated" ParentName="StorageRackBase" Abstract="True">
+  	<defName>RimFridge_Refrigerator</defName>
     <thingClass>RimFridge.Building_Refrigerator</thingClass>
     <description>Haulers carry stuff here for storage. This storage is refrigerated</description>
     <holdsRoof>true</holdsRoof>
@@ -98,9 +105,8 @@
       <Steel>1</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>350</WorkToBuild>
-      <Mass>4</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>350</WorkToMake>
     </statBases>
     <size>(1,1)</size>
   </ThingDef>
@@ -120,8 +126,7 @@
     </costList>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>700</WorkToBuild>
-      <Mass>8</Mass>
+      <WorkToMake>700</WorkToMake>
     </statBases>
     <size>(2,1)</size>
   </ThingDef>
@@ -140,9 +145,8 @@
       <Steel>3</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>1050</WorkToBuild>
-      <Mass>12</Mass>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>1050</WorkToMake>
     </statBases>
     <size>(3,1)</size>
   </ThingDef>
@@ -161,9 +165,8 @@
       <Steel>4</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>1400</WorkToBuild>
-      <Mass>16</Mass>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>1400</WorkToMake>
     </statBases>
     <size>(4,1)</size>
   </ThingDef>
@@ -184,9 +187,8 @@
       <Steel>4</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
-      <WorkToBuild>1400</WorkToBuild>
-      <Mass>16</Mass>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>1400</WorkToMake>
     </statBases>
     <size>(2,2)</size>
   </ThingDef>
@@ -205,9 +207,8 @@
       <Steel>6</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
-      <WorkToBuild>2100</WorkToBuild>
-      <Mass>24</Mass>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToMake>2100</WorkToMake>
     </statBases>
     <size>(3,2)</size>
   </ThingDef>
@@ -226,232 +227,10 @@
       <Steel>8</Steel>
     </costList>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
-      <WorkToBuild>2800</WorkToBuild>
-      <Mass>32</Mass>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToMake>2800</WorkToMake>
     </statBases>
     <size>(4,2)</size>
-  </ThingDef>
-
-<!-- Refrigerated Racks -->
-
-<!-- <ThingDef ParentName="StorageRackRefrigerated">
-  <defName>RefrigeratedStorageRackSingle</defName>
-  <label>Single refrigerated storage rack</label>
-  <graphicData>
-    <texPath>Things/Buildings/Furniture/RefrigeratedStorageSingle</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(1,1)</drawSize>
-  </graphicData>
-  <costStuffCount>15</costStuffCount>
-  <costList>
-    <Steel>5</Steel>
-    <Component>1</Component>
-  </costList>
-  <statBases>
-    <MaxHitPoints>250</MaxHitPoints>
-    <WorkToBuild>350</WorkToBuild>
-  </statBases>
-  <size>(1,1)</size>
-  <comps>
-    <li Class="RimFridge.CompProperties_SecondLayer">
-      <graphicData>
-        <texPath>Things/Buildings/Furniture/RefrigeratedStorageSingleLid</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shaderType>Transparent</shaderType>
-        <drawSize>(1,1)</drawSize>
-      </graphicData>
-      <altitudeLayer>MoteOverhead</altitudeLayer>
-    </li>
-  </comps>
-</ThingDef>
-
-<ThingDef ParentName="StorageRackRefrigerated">
-  <defName>RefrigeratedStorageRackSmall</defName>
-  <label>Small refrigerated storage rack</label>
-  <graphicData>
-    <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmall</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(2,1)</drawSize>
-  </graphicData>
-  <costStuffCount>30</costStuffCount>
-  <costList>
-    <Steel>10</Steel>
-    <Component>1</Component>
-  </costList>
-  <statBases>
-    <MaxHitPoints>250</MaxHitPoints>
-    <WorkToBuild>700</WorkToBuild>
-  </statBases>
-  <size>(2,1)</size>
-  <comps>
-    <li Class="RimFridge.CompProperties_SecondLayer">
-      <graphicData>
-        <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmallLid</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shaderType>Transparent</shaderType>
-        <drawSize>(2,1)</drawSize>
-      </graphicData>
-      <altitudeLayer>MoteOverhead</altitudeLayer>
-    </li>
-  </comps>  
-</ThingDef>
-
-<ThingDef ParentName="StorageRackRefrigerated">
-  <defName>RefrigeratedStorageRackMedium</defName>
-  <label>Medium refrigerated storage rack</label>
-  <graphicData>
-    <texPath>Things/Buildings/Furniture/RefrigeratedStorageMedium</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(3,1)</drawSize>
-  </graphicData>
-  <costStuffCount>45</costStuffCount>
-  <costList>
-    <Steel>15</Steel>
-    <Component>1</Component>
-  </costList>
-  <statBases>
-    <MaxHitPoints>250</MaxHitPoints>
-    <WorkToBuild>1050</WorkToBuild>
-  </statBases>
-  <size>(3,1)</size>
-  <comps>
-    <li Class="RimFridge.CompProperties_SecondLayer">
-      <graphicData>
-        <texPath>Things/Buildings/Furniture/RefrigeratedStorageMediumLid</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shaderType>Transparent</shaderType>
-        <drawSize>(3,1)</drawSize>
-      </graphicData>
-      <altitudeLayer>MoteOverhead</altitudeLayer>
-    </li>
-  </comps>
-</ThingDef>
-
-<ThingDef ParentName="StorageRackRefrigerated">
-  <defName>RefrigeratedStorageRackLarge</defName>
-  <label>Large refrigerated storage rack</label>
-  <graphicData>
-    <texPath>Things/Buildings/Furniture/RefrigeratedStorageLarge</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(4,1)</drawSize>
-  </graphicData>
-  <costStuffCount>60</costStuffCount>
-  <costList>
-    <Steel>20</Steel>
-    <Component>1</Component>
-  </costList>
-  <statBases>
-    <MaxHitPoints>250</MaxHitPoints>
-    <WorkToBuild>1400</WorkToBuild>
-  </statBases>
-  <size>(4,1)</size>
-  <comps>
-    <li Class="RimFridge.CompProperties_SecondLayer">
-      <graphicData>
-        <texPath>Things/Buildings/Furniture/RefrigeratedStorageLargeLid</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shaderType>Transparent</shaderType>
-        <drawSize>(4,1)</drawSize>
-      </graphicData>
-      <altitudeLayer>MoteOverhead</altitudeLayer>
-    </li>
-  </comps>
-</ThingDef> -->
-
-        <!-- Doubles -->
-
-<!-- <ThingDef ParentName="StorageRackRefrigerated">
-  <defName>RefrigeratedStorageRackSmallD</defName>
-  <label>Small refrigerated double storage rack</label>
-  <graphicData>
-    <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmallD</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(2,2)</drawSize>
-  </graphicData>
-  <costStuffCount>60</costStuffCount>
-  <costList>
-    <Steel>20</Steel>
-    <Component>2</Component>
-  </costList>
-  <statBases>
-    <MaxHitPoints>300</MaxHitPoints>
-    <WorkToBuild>1400</WorkToBuild>
-  </statBases>
-  <size>(2,2)</size>
-  <comps>
-    <li Class="RimFridge.CompProperties_SecondLayer">
-      <graphicData>
-        <texPath>Things/Buildings/Furniture/RefrigeratedStorageSmallDLid</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shaderType>Transparent</shaderType>
-        <drawSize>(2,2)</drawSize>
-      </graphicData>
-      <altitudeLayer>MoteOverhead</altitudeLayer>
-    </li>
-  </comps>  
-</ThingDef>
-
-<ThingDef ParentName="StorageRackRefrigerated">
-  <defName>RefrigeratedStorageRackMediumD</defName>
-  <label>Medium refrigerated double storage rack</label>
-  <graphicData>
-    <texPath>Things/Buildings/Furniture/RefrigeratedStorageMediumD</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(3,2)</drawSize>
-  </graphicData>
-  <costStuffCount>90</costStuffCount>
-  <costList>
-    <Steel>30</Steel>
-    <Component>2</Component>
-  </costList>
-  <statBases>
-    <MaxHitPoints>300</MaxHitPoints>
-    <WorkToBuild>2100</WorkToBuild>
-  </statBases>
-  <size>(3,2)</size>
-  <comps>
-    <li Class="RimFridge.CompProperties_SecondLayer">
-      <graphicData>
-        <texPath>Things/Buildings/Furniture/RefrigeratedStorageMediumDLid</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shaderType>Transparent</shaderType>
-        <drawSize>(3,2)</drawSize>
-      </graphicData>
-      <altitudeLayer>MoteOverhead</altitudeLayer>
-    </li>
-  </comps>  
-</ThingDef>
-
-<ThingDef ParentName="StorageRackRefrigerated">
-  <defName>RefrigeratedStorageRackLargeD</defName>
-  <label>Large refrigerated double storage rack</label>
-  <graphicData>
-    <texPath>Things/Buildings/Furniture/RefrigeratedStorageLargeD</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>(4,2)</drawSize>
-  </graphicData>
-  <costStuffCount>120</costStuffCount>
-  <costList>
-    <Steel>40</Steel>
-    <Component>2</Component>
-  </costList>
-  <statBases>
-    <MaxHitPoints>300</MaxHitPoints>
-    <WorkToBuild>2800</WorkToBuild>
-  </statBases>
-  <size>(4,2)</size>
-  <comps>
-    <li Class="RimFridge.CompProperties_SecondLayer">
-      <graphicData>
-        <texPath>Things/Buildings/Furniture/RefrigeratedStorageLargeDLid</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <shaderType>Transparent</shaderType>
-        <drawSize>(4,2)</drawSize>
-      </graphicData>
-      <altitudeLayer>MoteOverhead</altitudeLayer>
-    </li>
-  </comps>
-</ThingDef> -->
+  </ThingDef>  
 
 </Buildings>
