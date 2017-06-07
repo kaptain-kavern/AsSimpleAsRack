@@ -1,6 +1,6 @@
 # As Simple As Rack     [![Version](https://img.shields.io/badge/Rimworld-A17-blue.svg)](https://ludeon.com/forums/index.php?topic=23205)
 <p align="center"><img src="https://i.imgur.com/Z3dKcE3.jpg" /></p>
-## Description
+## Description                               
 ![Medium example](/Textures/Things/Buildings/Furniture/StorageMedium.png) ![Double Medium example](/Textures/Things/Buildings/Furniture/StorageMediumD.png) ![Medium example](/Textures/Things/Buildings/Furniture/StorageSingle.png) ![Double Medium example](/Textures/Things/Buildings/Furniture/StorageSmallD.png)
 
 - Add simple racked storage solutions, accessible after *smithing* research (all structures need a bit of metal as frame). They are declined in various size and can be constructed from stone, wood or rock.
