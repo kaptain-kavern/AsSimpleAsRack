@@ -1,49 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
 
-  <ThingDef Abstract="True" Name="StandingLampBase" ParentName="BuildingBase">
+  <ThingDef Abstract="True" Name="ASAR_StandingLampBase" ParentName="BuildingBase">
     <thingClass>Building</thingClass>
     <category>Building</category>
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <selectable>true</selectable>
     <fillPercent>0.20</fillPercent>
-    <pathCost>8</pathCost>
+    <pathCost>0</pathCost>
     <costList>
       <Steel>15</Steel>
     </costList>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <designationCategory>Furniture</designationCategory>
-    <rotatable>false</rotatable>
+    <rotatable>true</rotatable>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>40</basePowerConsumption>
+        <basePowerConsumption>75</basePowerConsumption>
         <shortCircuitInRain>false</shortCircuitInRain>
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
         <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <WorkToMake>170</WorkToMake>
+      <WorkToBuild>170</WorkToBuild>
       <Flammability>1.0</Flammability>
-      <Beauty>5</Beauty>
     </statBases>
   </ThingDef>
 
   <!--============================== Lighting ==============================-->
 
-  <ThingDef ParentName="StandingLampBase">
+  <ThingDef ParentName="ASAR_StandingLampBase">
     <defName>CeilingLight</defName>
     <label>ceiling light</label>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <WorkToMake>115</WorkToMake>
+      <WorkToBuild>115</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
-    <description>Simple low energy cost ceiling light.</description>
+    <description>Simple low cost ceiling light.</description>
     <size>(1,1)</size>
     <costList>
       <Steel>20</Steel>
@@ -61,7 +60,7 @@
     </graphicData>
     <comps>
       <li Class="CompProperties_Glower">
-        <glowRadius>8</glowRadius>
+        <glowRadius>12</glowRadius>
         <glowColor>(217,217,208,0)</glowColor>
       </li>
     </comps>

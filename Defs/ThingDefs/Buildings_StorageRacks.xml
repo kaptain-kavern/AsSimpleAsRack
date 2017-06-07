@@ -106,7 +106,7 @@
     </costList>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>350</WorkToMake>
+      <WorkToBuild>350</WorkToBuild>
     </statBases>
     <size>(1,1)</size>
   </ThingDef>
@@ -126,7 +126,7 @@
     </costList>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>700</WorkToMake>
+      <WorkToBuild>700</WorkToBuild>
     </statBases>
     <size>(2,1)</size>
   </ThingDef>
@@ -146,7 +146,7 @@
     </costList>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
-      <WorkToMake>1050</WorkToMake>
+      <WorkToBuild>1050</WorkToBuild>
     </statBases>
     <size>(3,1)</size>
   </ThingDef>
@@ -166,7 +166,7 @@
     </costList>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>1400</WorkToMake>
+      <WorkToBuild>1400</WorkToBuild>
     </statBases>
     <size>(4,1)</size>
   </ThingDef>
@@ -188,7 +188,7 @@
     </costList>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
-      <WorkToMake>1400</WorkToMake>
+      <WorkToBuild>1400</WorkToBuild>
     </statBases>
     <size>(2,2)</size>
   </ThingDef>
@@ -208,7 +208,7 @@
     </costList>
     <statBases>
       <MaxHitPoints>600</MaxHitPoints>
-      <WorkToMake>2100</WorkToMake>
+      <WorkToBuild>2100</WorkToBuild>
     </statBases>
     <size>(3,2)</size>
   </ThingDef>
@@ -228,7 +228,7 @@
     </costList>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
-      <WorkToMake>2800</WorkToMake>
+      <WorkToBuild>2800</WorkToBuild>
     </statBases>
     <size>(4,2)</size>
   </ThingDef>  
