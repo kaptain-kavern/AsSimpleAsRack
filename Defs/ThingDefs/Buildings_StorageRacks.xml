@@ -40,6 +40,7 @@
     <surfaceType>Item</surfaceType>
     <pathCost>125</pathCost>
     <building>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <defaultStorageSettings>
         <filter>
           <categories>

@@ -35,6 +35,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <building>
       <preventDeterioration>true</preventDeterioration>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <fixedStorageSettings>
         <filter>
           <categories>
