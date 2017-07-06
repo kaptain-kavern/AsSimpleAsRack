@@ -8,9 +8,6 @@
     <description>Haulers carry stuff here for storage. This storage is refrigerated</description>
     <altitudeLayer>Building</altitudeLayer>
     <holdsRoof>true</holdsRoof>
-    <tradeTags>
-      <li>Furniture</li>
-    </tradeTags>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
