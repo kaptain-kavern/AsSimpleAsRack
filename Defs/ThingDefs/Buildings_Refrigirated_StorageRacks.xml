@@ -2,7 +2,7 @@
 <Buildings>
 <!-- Abstract -->
 
-  <ThingDef Name="FridgeBase" Abstract="True">
+  <ThingDef Name="ASAR_FridgeBase" Abstract="True">
     <thingClass>RimFridge.Building_Refrigerator</thingClass>
     <DesignationCategory>Storage</DesignationCategory>
     <description>Haulers carry stuff here for storage. This storage is refrigerated</description>
@@ -72,7 +72,7 @@
 
 <!-- Refrigerated Racks -->
 
-<ThingDef ParentName="FridgeBase">
+<ThingDef ParentName="ASAR_FridgeBase">
     <defName>RefrigeratedStorageRackSingle</defName>
     <label>Single refrigerated storage rack</label>
     <graphicData>
@@ -107,7 +107,7 @@
     </comps>
   </ThingDef>
 
-<ThingDef ParentName="FridgeBase">
+<ThingDef ParentName="ASAR_FridgeBase">
     <defName>RefrigeratedStorageRackSmall</defName>
     <label>Small refrigerated storage rack</label>    
     <graphicData>
@@ -142,7 +142,7 @@
     </comps>
   </ThingDef>
 
-<ThingDef ParentName="FridgeBase">
+<ThingDef ParentName="ASAR_FridgeBase">
     <defName>RefrigeratedStorageRackMedium</defName>
     <label>Medium refrigerated storage rack</label>
     <graphicData>
@@ -177,7 +177,7 @@
     </comps>
   </ThingDef>
 
-<ThingDef ParentName="FridgeBase">
+<ThingDef ParentName="ASAR_FridgeBase">
     <defName>RefrigeratedStorageRackLarge</defName>
     <label>Large refrigerated storage rack</label>
     <graphicData>
@@ -214,7 +214,7 @@
 
   <!-- Doubles -->
 
-<ThingDef ParentName="FridgeBase">
+<ThingDef ParentName="ASAR_FridgeBase">
   <defName>RefrigeratedStorageRackSmallD</defName>
   <label>Small refrigerated double storage rack</label>
   <graphicData>
@@ -249,7 +249,7 @@
     </comps>
    </ThingDef>
 
-<ThingDef ParentName="FridgeBase">
+<ThingDef ParentName="ASAR_FridgeBase">
   <defName>RefrigeratedStorageRackMediumD</defName>
   <label>Medium refrigerated double storage rack</label>
   <graphicData>
@@ -285,7 +285,7 @@
 
   </ThingDef>
 
-<ThingDef ParentName="FridgeBase">
+<ThingDef ParentName="ASAR_FridgeBase">
   <defName>RefrigeratedStorageRackLargeD</defName>
   <label>Large refrigerated double storage rack</label>
   <graphicData>
