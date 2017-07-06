@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Buildings>
 <!-- Abstract -->
-  <ThingDef Name="BuildingBase" Abstract="True">
-    <category>Building</category>
-    <thingClass>Building</thingClass>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
-    <selectable>true</selectable>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <repairEffect>Repair</repairEffect>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>BuildingRubble</filthLeaving>
-    <statBases>
-      <SellPriceFactor>0.70</SellPriceFactor>
-    </statBases>
-  </ThingDef>
-
   <ThingDef Name="StorageRackBase" Abstract="True" ParentName="BuildingBase">
   	<description>Haulers carry stuff here for storage.</description>
     <thingClass>Building_Storage</thingClass>
@@ -59,32 +44,6 @@
     <inspectorTabs>
       <li>ITab_Storage</li>
     </inspectorTabs>
-  </ThingDef>
-
-  <ThingDef Name="StorageRackRefrigerated" ParentName="StorageRackBase" Abstract="True">
-  	<defName>RimFridge_Refrigerator</defName>
-    <thingClass>RimFridge.Building_Refrigerator</thingClass>
-    <description>Haulers carry stuff here for storage. This storage is refrigerated</description>
-    <holdsRoof>true</holdsRoof>
-    <building>
-      <preventDeterioration>true</preventDeterioration>
-    </building>
-    <tickerType>Rare</tickerType>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>150</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Glower">
-        <glowRadius>2.5</glowRadius>
-        <glowColor>(89,188,255,0)</glowColor>
-      </li>
-    </comps>
-    <researchPrerequisites>
-      <li>Electricity</li>
-    </researchPrerequisites>
   </ThingDef>
 
 <!-- Normal Racks -->
