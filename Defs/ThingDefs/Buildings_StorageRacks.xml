@@ -59,9 +59,6 @@
     <inspectorTabs>
       <li>ITab_Storage</li>
     </inspectorTabs>
-    <researchPrerequisites>
-      <li>Smithing</li>
-    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef Name="StorageRackRefrigerated" ParentName="StorageRackBase" Abstract="True">

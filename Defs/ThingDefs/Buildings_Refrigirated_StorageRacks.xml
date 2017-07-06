@@ -27,7 +27,6 @@
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>BuildingRubble</filthLeaving>
     <researchPrerequisites>
-      <li>Smithing</li>
       <li>AirConditioning</li>
     </researchPrerequisites>
     <passability>PassThroughOnly</passability>
