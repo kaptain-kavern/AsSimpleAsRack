@@ -35,7 +35,9 @@
       <fixedStorageSettings>
         <filter>
           <categories>
-            
+            <li>FoodMeals</li>
+            <li>AnimalProductRaw</li>
+            <li>PlantMatter</li>            
           </categories>
           <thingDefs>
             <li>Beer</li>
