@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
 
   <ThingDef Abstract="True" Name="ASAR_StandingLampBase" ParentName="BuildingBase">
     <thingClass>Building</thingClass>
@@ -28,6 +28,9 @@
       <WorkToBuild>170</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <!--============================== Lighting ==============================-->
@@ -66,4 +69,4 @@
     </comps>
   </ThingDef>
 
-  </Buildings>
+  </Defs>

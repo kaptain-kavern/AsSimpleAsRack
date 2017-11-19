@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
 <!-- Abstract -->
   <ThingDef Name="StorageRackBase" Abstract="True" ParentName="BuildingBase">
   	<description>Haulers carry stuff here for storage.</description>
     <thingClass>Building_Storage</thingClass>
-    <AltitudeLayer>Building</AltitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <castEdgeShadows>true</castEdgeShadows>
-    <DesignationCategory>Storage</DesignationCategory>
+    <designationCategory>ASAR_StorageCat</designationCategory>
     <tradeTags>
       <li>Furniture</li>
     </tradeTags>
@@ -41,9 +41,15 @@
         </filter>
       </defaultStorageSettings>
     </building>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
     <inspectorTabs>
       <li>ITab_Storage</li>
     </inspectorTabs>
+    <canOverlapZones>false</canOverlapZones>
   </ThingDef>
 
 <!-- Normal Racks -->
@@ -190,4 +196,4 @@
     <size>(4,2)</size>
   </ThingDef>  
 
-</Buildings>
+</Defs>

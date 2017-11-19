@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <DesignationCategoryDef>
-    <DefName>Storage</DefName>
+  <designationCategoryDef>
+    <defName>ASAR_StorageCat</defName>
     <label>Storage</label>
     <description>Various storage buildings</description>
     <order>10</order>
@@ -13,12 +13,6 @@
       <li>Designator_ZoneAddStockpile_Dumping</li>
       <li>Designator_ZoneDelete</li>
     </specialDesignatorClasses>
-  </DesignationCategoryDef>
-
-
-
-
-
-
-
+  </designationCategoryDef>
+  
 </Defs>

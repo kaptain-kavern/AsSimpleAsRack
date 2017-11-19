@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
 <!-- Abstract -->
 
   <ThingDef Name="ASAR_FridgeBase" Abstract="True">
     <thingClass>RimFridge.Building_Refrigerator</thingClass>
-    <DesignationCategory>Storage</DesignationCategory>
+    <designationCategory>ASAR_StorageCat</designationCategory>
     <description>Haulers carry stuff here for storage. This storage is refrigerated</description>
     <altitudeLayer>Building</altitudeLayer>
     <holdsRoof>true</holdsRoof>
@@ -30,7 +30,7 @@
     <fillPercent>0.4</fillPercent>
     <castEdgeShadows>true</castEdgeShadows>
     <building>
-      <preventDeterioration>true</preventDeterioration>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <fixedStorageSettings>
         <filter>
@@ -68,6 +68,7 @@
     <staticSunShadowHeight>0.5</staticSunShadowHeight>    
     <tickerType>Rare</tickerType>
     <pathCost>30</pathCost>
+    <canOverlapZones>false</canOverlapZones>
   </ThingDef>
 
 <!-- Refrigerated Racks -->
@@ -320,4 +321,4 @@
     </comps>
   </ThingDef>
 
-</Buildings>
+</Defs>
