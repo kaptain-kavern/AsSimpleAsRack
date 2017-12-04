@@ -1,4 +1,4 @@
-# As Simple As Rack     [![Version](https://img.shields.io/badge/Rimworld-B18-green.svg)](https://ludeon.com/forums/index.php?topic=23205)
+# As Simple As Rack     [![Version](https://img.shields.io/badge/Rimworld-B18-green.svg)](https://ludeon.com/forums/index.php?topic=23205)     [![NinjaSync'ed](https://img.shields.io/badge/Ninja-Sync'ed-green.svg)](http://www.modsync.ninja/#one)
 <p align="center"><img src="https://i.imgur.com/Z3dKcE3.jpg" /></p>
 
 ## Description              

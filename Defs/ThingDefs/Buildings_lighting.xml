@@ -38,8 +38,12 @@
   <ThingDef ParentName="ASAR_StandingLampBase">
     <defName>CeilingLight</defName>
     <label>ceiling light</label>
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
     <altitudeLayer>MoteOverhead</altitudeLayer>
     <passability>Standable</passability>
+    <clearBuildingArea>false</clearBuildingArea>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
       <WorkToBuild>115</WorkToBuild>
